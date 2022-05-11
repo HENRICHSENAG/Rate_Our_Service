@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="CSS/Formatierung.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+        <script 
+        src="https://smtpjs.com/v3/smtp.js">
+                    </script>
+        <script rel="Variablen.js">
+
+                var url_string = window.location;
+                var url = new URL(url_string);
+                var name = url.searchParams.get("name0");
+                var unternehmen = url.searchParams.get("unternehmen0");
+                var ticket = url.searchParams.get("ticket0");
+                var bearbeiter = url.searchParams.get("bearbeiter0");
+                var anrede = url.searchParams.get("anrede0")
+                var id = url.searchParams.get("id");
+
+                unternehmen = unescape(unternehmen).replace("%", " ");
+                unternehmen = unescape(unternehmen).replace("%", " ");
+                unternehmen = unescape(unternehmen).replace("?", "");
+                name = unescape(name).replace("?", "");
+                ticket = unescape(ticket).replace("?", "");
+                anrede = unescape(anrede).replace("?", "");
+                anrede = unescape(anrede).replace("?", "");
+                
+                
+                
+                
+</script>
+
+
+    </head>
+
+    <body>
+        
+                <div class="henrichsen">
+                <img id="Logo" src="Bilder/hag.png" alt="Logo Henrichsen">
+                   <h1>Rating of HENRICHSEN Support</h1>
+                </div>
+                
+                <div class="raum">
+                        
+                        <img id="büro" src="Bilder/Büro.jpg" alt="Büro">
+                </div>
+            
+        
+<br>
+
+        <div class="begrüßung">
+         <p id="kunde"></label></p>
+        </div>
+<br>
+                
+        <form method="post">
+<!-- Nummer 1 -->
+        <div class="fragen">
+                <div class="eins-vier">
+                        <br>
+        <h2>1. How satisfied are you with the time it took to process your request?</h2><br>
+
+  <table>
+       <tr> 
+        
+        <td><input type="radio" id="sehr positiv" name="Bearbeitungszeit" value="sehr zufrieden" >
+        <span for="sehr positiv">very satisfied</span></td>
+
+        <td><input type="radio" id="positiv" name="Bearbeitungszeit" value="zufrieden">
+        <span for="positiv">satisfied</span></td>
+
+        <td><input type="radio" id="weder negativ noch positiv" name="Bearbeitungszeit" value="neutral">
+        <span for="weder negativ noch positiv">neutral</span></td>
+
+        <td><input type="radio" id="negativ" name="Bearbeitungszeit" value="unzufrieden">
+        <span for="negativ">unsatisfied</span></td>
+
+        <td><input type="radio" id="sehr negativ" name="Bearbeitungszeit" value="sehr unzufrieden" required>
+        <span for="sehr negativ">very unsatisfied</span></td>
+        </tr>
+  </table><br>
+<!-- Nummer 2 -->   
+
+        <h2>2. How satisfied are you with the solution found?</h2><br>
+
+        <table>
+        <tr>
+
+        <td><input type="radio" id="sehr positiv" name="Loesung" value="sehr zufrieden" >
+        <span for="sehr positiv">very satisfied</span></td>
+
+        <td><input type="radio" id="positiv" name="Loesung" value="zufrieden" >
+        <span for="positiv">satisfied</span></td>
+        
+        <td><input type="radio" id="weder negativ noch positiv" name="Loesung" value="neutral" >
+        <span for="weder negativ noch positiv">neutral</span></td>
+
+        <td><input type="radio" id="negativ" name="Loesung" value="unzufrieden" >
+        <span for="negativ">unsatisfied</span></td>
+
+        <td><input type="radio" id="sehr negativ" name="Loesung" value="sehr unzufrieden" required>
+        <span for="sehr negativ">very unsatisfied</span></td>
+        </tr>
+        </table><br>
+
+
+<!-- Nummer 3 -->
+
+        <h2>3. How satisfied are you with the friendliness of the service staff?</h2><br>
+
+        <table>
+        <tr>
+        <td><input type="radio" id="sehr positiv" name="Freundlichkeit" value="sehr zufrieden">
+        <span for="sehr positiv">very satisfied</span></td>
+
+        <td><input type="radio" id="positiv" name="Freundlichkeit" value="zufrieden">
+        <span for="positiv">satisfied</span></td>
+
+        <td><input type="radio" id="weder negativ noch positiv" name="Freundlichkeit" value="neutral">
+        <span for="weder negativ noch positiv">neutral</span></td>
+        
+        <td><input type="radio" id="negativ" name="Freundlichkeit" value="unzufrieden">
+        <span for="negativ">unsatisfied</span></td>
+
+        <td><input type="radio" id="sehr negativ" name="Freundlichkeit" value="sehr unzufrieden" required>
+        <span for="sehr negativ">very unsatisfied</span></td>
+
+        </tr>
+</table><br>
+<!-- Nummer 4-->
+
+        <h2>4. How satisfied are you with the clarity of the answer?</h2><br>
+
+
+        <table>
+                <tr>
+        <td><input type="radio" id="sehr positiv" name="Klarheit" value="sehr zufrieden">
+        <span for="sehr positiv">very satisfied</span></td>
+
+        <td><input type="radio" id="positiv" name="Klarheit" value="zufrieden">
+        <span for="positiv">satisfied</span></td>
+
+        <td><input type="radio" id="weder negativ noch positiv" name="Klarheit" value="neutral">
+        <span for="weder negativ noch positiv">neutral</span></td>
+
+        <td><input type="radio" id="negativ" name="Klarheit" value="unzufrieden">
+        <span for="negativ">unsatisfied</span></td>
+
+        <td><input type="radio" id="sehr negativ" name="Klarheit" value="sehr unzufrieden" required>
+        <span for="sehr negativ">very unsatisfied</span></td>
+
+        </tr>
+        </table><br>
+                </div>
+<!-- Nummer 5 -->   
+
+        <h2>5. How easy was it to post the ticket report?</h2><br>
+
+        <table>
+                <tr>
+        <td><input type="radio" id="super leicht" name="Schwierigkeit" value="super leicht">
+        <span for="super leicht">super easy</span></td>
+        
+        <td><input type="radio" id="ziemlich leicht" name="Schwierigkeit" value="ziemlich leicht">
+        <span for="ziemlich leicht">quite easy</span></td>
+
+        <td><input type="radio" id="durchschnittlich" name="Schwierigkeit" value="durchschnittlich">
+        <span for="durchschnittlich">average</span></td>
+
+        <td><input type="radio" id="nicht so leicht" name="Schwierigkeit" value="nicht so leicht">
+        <span for="nicht so leicht">not so easy</span></td>
+
+        <td><input type="radio" id="wirklich schwer" name="Schwierigkeit" value="wirklich schwer" required>
+        <span for="wirklich schwer">really hard</span></td>
+        </tr>
+        </table><br>
+<!-- Nummer 6 -->   
+
+        <h2>6. In which service areas do you see potential for improvement?</h2>
+        <div class="sechs">
+        <p>
+        <input type="text" id="text" name="Verbesserungen" cols="60" rows="2">
+        </p>
+        </div>
+<br>
+<!-- Nummer 7 -->   
+
+        <h2>7. Rate our service on the 5-star scale</h2>
+        <p>Please click on the stars and rate according to satisfaction with one star (= poor) to five stars (= very good)</p>
+        
+        <p class="sternebewertung">
+                <input type="radio" id="stern5" name="Sternebewertung" value="5" required><label for="stern5" title="5 stars">5 star</label>
+                <input type="radio" id="stern4" name="Sternebewertung" value="4"><label for="stern4" title="4 stars">4 star</label>
+                <input type="radio" id="stern3" name="Sternebewertung" value="3"><label for="stern3" title="3 stars">3 star</label>
+                <input type="radio" id="stern2" name="Sternebewertung" value="2"><label for="stern2" title="2 stars">2 star</label>
+                <input type="radio" id="stern1" name="Sternebewertung" value="1"><label for="stern1" title="1 star" >1 star</label><p id ="star"></p>
+                
+        
+        </span>
+       </p>
+       
+        <br><br><br><br><br><br>
+        
+</div>
+        <input  type="submit" id="button" value="Submit rating" onclick="createEmail(); return false;">
+        
+        </form>
+                <script src="JS/Auswerten.js"></script>                                       
+                </script>
+    </body>
+</html>
